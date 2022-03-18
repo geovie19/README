@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# AUTHOR : Geovanie N
+# DATE : 03/17/2022
+# DESCRIPTION: Script to check if a file or directory exist
+
+echo "Please enter your directory or file name"
+
+read F
+
+find / -name $F 
+if
+ [ $? -eq 0 ]
+ then 
+echo "the directory or file $F exist in the system"
+
+echo
+ else
+echo "the directory or file $F does not exist in the system"
+
+fi
